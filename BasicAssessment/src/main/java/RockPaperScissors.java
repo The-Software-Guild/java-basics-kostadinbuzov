@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-
+import java.util.InputMismatchException;
 public class RockPaperScissors {
 
     public static void main(String[] args) {
@@ -91,12 +91,12 @@ public class RockPaperScissors {
         Scanner myScanner = new Scanner(System.in);
         int numOfRounds = 0;
         try {
-            numOfRounds = Integer.parseInt(myScanner.nextLine());
+            numOfRounds = myScanner.nextInt();
             if(numOfRounds<1 || numOfRounds>10) {
                 System.out.println("Input needs to be positive integer between 1 and 10");
                 System.exit(0);
             }
-        }catch(NumberFormatException ex){
+        }catch(InputMismatchException ex){
             System.out.println("Input needs to be positive integer between 1 and 10");
             System.exit(0);
         }
