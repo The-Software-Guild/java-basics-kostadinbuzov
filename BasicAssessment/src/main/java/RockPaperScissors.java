@@ -18,11 +18,11 @@ public class RockPaperScissors {
             computerWins = 0;
             personWins = 0;
             ties = 0;
-            numOfRounds = GetNumberOfRounds();
+            numOfRounds = getNumberOfRounds();
 
             //Play out all the rounds from the current game
             for(int i = 0; i<numOfRounds; i++){
-                result = PlayRound();
+                result = playRound();
                 if (result == 0) {
                     ties++;
                     System.out.println("It's a tie!\n");
@@ -62,7 +62,7 @@ public class RockPaperScissors {
     }
 
     //The function determines who is the winner of every round
-    public static int PlayRound(){
+    public static int playRound(){
 
         System.out.println("What is your choice \n 1 = Rock\n 2 = Paper\n 3 = Scissors?");
 
@@ -116,7 +116,7 @@ public class RockPaperScissors {
     }
 
     //Ask the user how many rounds they want to play and return the value
-    public static int GetNumberOfRounds(){
+    public static int getNumberOfRounds(){
         System.out.println("How many rounds do you want to play? ");
         Scanner myScanner = new Scanner(System.in);
         int numOfRounds = 0;

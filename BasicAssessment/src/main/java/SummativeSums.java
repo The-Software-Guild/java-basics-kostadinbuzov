@@ -11,13 +11,13 @@ public class SummativeSums {
 
         //Print out the added value of each array
         for(int i = 0; i < arrays.length; i++){
-            System.out.println("#" + (i+1) + " Array Sum: " + Adder(arrays[i]));
+            System.out.println("#" + (i+1) + " Array Sum: " + add(arrays[i]));
         }
 
     }
 
     //Function to add all numbers in an array of numbers
-    public static int Adder(int [] numbers){
+    public static int add(int [] numbers){
         int result = 0;
         for (int number : numbers) {
             result += number;
