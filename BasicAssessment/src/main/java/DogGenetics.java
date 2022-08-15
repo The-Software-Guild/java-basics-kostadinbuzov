@@ -15,12 +15,7 @@ public class DogGenetics {
         System.out.println(dogName + " is:");
 
         //Create an array with dog names
-        String[] dogBreeds = new String[5];
-        dogBreeds[0] = "St. Bernard";
-        dogBreeds[1] = "Chihuahua";
-        dogBreeds[2] = "Dramatic RedNosed Asian Pug";
-        dogBreeds[3] = "Common Cur";
-        dogBreeds[4] = "King Doberman";
+        String[] dogBreeds = new String[]{"St. Bernard", "Chihuahua", "Dramatic RedNosed Asian Pug", "Common Cur", "King Doberman"};
 
         int limit = 100;
         int percentage;
